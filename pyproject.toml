@@ -1,0 +1,21 @@
+[project]
+name = "feedzgerald"
+version = "0.1.0"
+description = "Generate filtered RSS feeds by applying rules on existing ones"
+authors = [
+    {name = "Balthazar Rouberol",email = "br@imap.cc"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "feedparser (>=6.0.12,<7.0.0)",
+    "feedgen (>=1.0.0,<2.0.0)",
+    "httpx (>=0.28.1,<0.29.0)",
+    "asyncio-taskpool (>=1.2.0,<2.0.0)",
+    "typing-extensions (>=4.15.0,<5.0.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
