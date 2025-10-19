@@ -41,6 +41,9 @@ class FeedProcessor:
             ):
                 if negative_description_filter in feed_entry.description:
                     keep = False
+            if negative_url_filter := self.feed_config.negative_url_filter:
+                if negative_url_filter in feed_entry.url:
+                    keep = False
             if keep:
                 log.info(f"[{self.feed_config.name}] Keeping feed {feed_entry.title}")
                 filtered_entries.append(feed_entry)

@@ -11,6 +11,7 @@ class FeedConfiguration:
     filename: str
     url: str
     title_filter: str | None
+    negative_url_filter: str | None
     negative_title_filter: str | None
     description_filter: str | None
     negative_description_filter: str | None
@@ -39,6 +40,7 @@ def read_config(filepath: Path) -> Config:
             negative_title_filter=conf.get("title_filter"),
             description_filter=conf.get("description_filter"),
             negative_description_filter=conf.get("description_filter"),
+            negative_url_filter=conf.get("negative_url_filter"),
             output_folder=output_folder,
         )
         for feed_name, conf in config["feeds"].items()
