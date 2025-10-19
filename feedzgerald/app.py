@@ -38,6 +38,10 @@ async def main(args: argparse.Namespace):
     await pool.gather_and_close()
 
 
-if __name__ == "__main__":
+def run_main():
     args = parse_args()
     asyncio.run(main(args))
+
+
+if __name__ == "__main__":
+    run_main()
