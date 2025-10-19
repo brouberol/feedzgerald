@@ -27,4 +27,15 @@ negative_title_filter = "Jewel of the Indigo Isles"
 name = "Backseat"
 url = "https://www.youtube.com/feeds/videos.xml?channel_id=UC2ijB3_Fg2pIW1g6FeIiYKA"
 title_filter = "BACKSEAT - S0"
+
+[feeds.dm_lair]
+name = "The DM Lair"
+url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCk9dtbM-wjpLk134r55OUbg"
+negative_url_filter = "youtube.com/shorts/"
+negative_title_filter = "Q&A"
+
+[feeds.tiny_desk_concerts]
+name = "Tiny Desk Concerts"
+url = "https://www.youtube.com/feeds/videos.xml?channel_id=UC4eYXhJI4-7wSWc8UNRwD4A"
+title_filter = "Tiny Desk Concert"
 ```
