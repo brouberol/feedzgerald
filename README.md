@@ -26,5 +26,5 @@ title_negative_filter = "Jewel of the Indigo Isles"
 [feeds.backseat]
 name = "Backseat"
 url = "https://www.youtube.com/feeds/videos.xml?channel_id=UC2ijB3_Fg2pIW1g6FeIiYKA"
-title_filter = "BACKSEAT - S"
+title_filter = "BACKSEAT - S0"
 ```
