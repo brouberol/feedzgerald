@@ -29,7 +29,7 @@ class FeedProcessor:
             if title_filter := self.feed_config.title_filter:
                 if title_filter not in feed_entry.title:
                     keep = False
-            if negative_title_filter := self.feed_config.negative_description_filter:
+            if negative_title_filter := self.feed_config.negative_title_filter:
                 if negative_title_filter in feed_entry.title:
                     keep = False
             if description_filter := self.feed_config.description_filter:

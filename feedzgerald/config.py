@@ -37,9 +37,9 @@ def read_config(filepath: Path) -> Config:
             filename=f"{feed_name}.rss",
             url=conf["url"],
             title_filter=conf.get("title_filter"),
-            negative_title_filter=conf.get("title_filter"),
+            negative_title_filter=conf.get("negative_title_filter"),
             description_filter=conf.get("description_filter"),
-            negative_description_filter=conf.get("description_filter"),
+            negative_description_filter=conf.get("negative_description_filter"),
             negative_url_filter=conf.get("negative_url_filter"),
             output_folder=output_folder,
         )

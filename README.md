@@ -16,12 +16,12 @@ title_filter = "Full Performance"
 [feeds.knights_of_last_call]
 name = "Knights of Last Call"
 url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCIVOFu4geQx5KrTTQwtIyMg"
-title_negative_filter = "Torchbearer"
+negative_title_filter = "Torchbearer"
 
 [feeds.roll_for_combat]
 name = "Roll for Combat"
 url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCU4p5Dgq5G8cA2OMU1SLpXw"
-title_negative_filter = "Jewel of the Indigo Isles"
+negative_title_filter = "Jewel of the Indigo Isles"
 
 [feeds.backseat]
 name = "Backseat"
