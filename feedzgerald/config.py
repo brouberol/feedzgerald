@@ -10,6 +10,7 @@ class FeedConfiguration:
     name: str
     filename: str
     url: str
+    website: str
     title_filter: str | None
     negative_url_filter: str | None
     negative_title_filter: str | None
@@ -36,6 +37,7 @@ def read_config(filepath: Path) -> Config:
             name=conf["name"],
             filename=f"{feed_name}.rss",
             url=conf["url"],
+            website=conf["website"],
             title_filter=conf.get("title_filter"),
             negative_title_filter=conf.get("negative_title_filter"),
             description_filter=conf.get("description_filter"),

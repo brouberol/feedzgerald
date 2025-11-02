@@ -52,7 +52,7 @@ class FeedProcessor:
     def generate(self, entries: list[feedparser.FeedParserDict]):
         feed = FeedGenerator()
         feed.id(self.feed_config.url)
-        feed.link(href=self.feed_config.url)
+        feed.link(href=self.feed_config.website)
         feed.description(f"Filtered feed from {self.feed_config.url}")
         feed.title(self.feed_config.name)
         for entry in entries:
