@@ -10,6 +10,8 @@ log = logging.getLogger(__name__)
 
 
 class FeedProcessor:
+    """Download a remote RSS file and produce a local, curated one, by applying filters"""
+
     def __init__(self, feed_config: FeedConfiguration):
         self.feed_config = feed_config
 

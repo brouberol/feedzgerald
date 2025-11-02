@@ -19,7 +19,7 @@ logging.getLogger("httpx").setLevel(logging.WARNING)
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Generate rss feed files by filtering remote rss feeds"
+        description="Curate your RSS feeds by filtering existing ones"
     )
     parser.add_argument(
         "-c",

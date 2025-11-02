@@ -1,7 +1,7 @@
 [project]
 name = "feedzgerald"
 version = "0.1.0"
-description = "Generate filtered RSS feeds by applying rules on existing ones"
+description = "Curate your RSS feeds by filtering existing ones"
 authors = [
     {name = "Balthazar Rouberol",email = "br@imap.cc"}
 ]

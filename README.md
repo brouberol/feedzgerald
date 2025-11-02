@@ -1,6 +1,6 @@
 ## Feedzgerald
 
-Feedzgerald is an application used to filter RSS feeds and generate new feed files containing the filtered entries. For example, it can be used to expose an RSS feeds to a YouTube channel for specific topics, or by excluding topics.
+Feedzgerald is an application used to curate RSS feeds and by filtering existing ones. For example, it can be used to expose an RSS feeds to a YouTube channel for specific topics, or by excluding topics.
 
 At the time of this writing, this is my personal feedzgerald configuration file:
 
@@ -44,4 +44,23 @@ name = "Tiny Desk Concerts"
 url = "https://www.youtube.com/feeds/videos.xml?channel_id=UC4eYXhJI4-7wSWc8UNRwD4A"
 website = "https://www.youtube.com/@nprmusic"
 title_filter = "Tiny Desk Concert"
+```
+
+
+### Installation
+
+You can run
+```console
+$ pip install feedzgerald
+$ feedzgerald -c ./path/to/config.toml
+```
+
+Alternatively, you can use the provided docker image to run `feedzgerald` without installing any python dependencies:
+```console
+$ docker run -it --rm \
+  --name=feedzgerald
+  -v path/to/feedzgerald/config.toml:/app/config.toml
+  -v path/to/output_folder/feedzgerald:/feeds
+  brouberol/feedzgerald
+  --config /app/config.toml
 ```
