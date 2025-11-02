@@ -58,9 +58,9 @@ $ feedzgerald -c ./path/to/config.toml
 Alternatively, you can use the provided docker image to run `feedzgerald` without installing any python dependencies:
 ```console
 $ docker run -it --rm \
-  --name=feedzgerald
-  -v path/to/feedzgerald/config.toml:/app/config.toml
-  -v path/to/output_folder/feedzgerald:/feeds
-  brouberol/feedzgerald
+  --name=feedzgerald \
+  -v path/to/feedzgerald/config.toml:/app/config.toml \
+  -v path/to/output_folder/feedzgerald:/feeds \
+  brouberol/feedzgerald \
   --config /app/config.toml
 ```
