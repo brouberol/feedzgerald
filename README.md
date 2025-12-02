@@ -1,3 +1,6 @@
+> [!WARNING]  
+> Moved to https://git.balthazar-rouberol.com/brouberol/feedzgerald
+
 ## Feedzgerald
 
 Feedzgerald is an application used to curate RSS feeds and by filtering existing ones. For example, it can be used to expose an RSS feeds to a YouTube channel for specific topics, or by excluding topics.
